@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./att.css" />
+  </head>
+  <body>
+    
+    <div class="calculator">
+        <input class="barra" type="text" id="result" readonly />
+      <div class="caixa-1">
+        <button class="barra-1"  onclick="clearResult()">AC</button>
+        <button class="barra-1" onclick="clearResult('+/-')">+/-</button>
+        <button class="barra-1" onclick="calculate('%')">%</button>
+        <button class="laranja" onclick="calculate('/')">/</button>
+      </div>
+      <div class="caixa-2">
+        <button class="barra-2" onclick="calculate('7')">7</button>
+        <button class="barra-2" onclick="calculate('8')">8</button>
+        <button class="barra-2" onclick="calculate('9')">9</button>
+        <button class="laranja" onclick="calculate('*')">x</button>
+      </div>
+      <div class="caixa-3">
+        <button class="barra-3" onclick="calculate('4')">4</button>
+        <button class="barra-3" onclick="calculate('5')">5</button>
+        <button class="barra-3" onclick="calculate('6')">6</button>
+        <button class="laranja" onclick="calculate('-')">-</button>
+      </div>
+      <div class="caixa-4">
+        <button class="barra-4" onclick="calculate('1')">1</button>
+        <button class="barra-4" onclick="calculate('2')">2</button>
+        <button class="barra-4" onclick="calculate('3')">3</button>
+        <button class="laranja" onclick="calculate('+')">+</button>
+      </div>
+      <div class="caixa-5">
+        <button class="barra-5" id="zero" onclick="calculate('0')">0</button>
+        <button class="barra-5" onclick="calculate('.')">.</button>
+        <button class="laranja" onclick="calculate('=')">=</button>
+      </div>
+    </div>
+    <script src="./att.js"></script>
+  </body>
+</html>
